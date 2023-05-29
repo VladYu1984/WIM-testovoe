@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a{
+    background: linear-gradient( #6C34E0 0%, #FF6ABF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+img{
+	vertical-align: top;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, p {
+    color: #fff;
+}
+
+html, 
+body {
+	line-height: 1;
+	font-size: 16px;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0 100px;
+    background-color: #000;
+}
+
+@media (max-width: 799px){
+    .wrapper {
+        padding: 0 40px;
+    }
+}
+
+.mask-group > img {
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#mask_01 {
+    left: 0;
+    top: 0;
+}
+
+#mask_02 {
+    right: 0;
+    top: 0;
+}
+
+#mask_03 {
+    right: 0;
+    top: 268px;
+}
+
+#mask_04 {
+    left: 0;
+    top: 587px;
+}
+
+header {
+    text-align: center;
+    padding: 36px 0;
+}
+
+.header-block {
+    margin: 0 auto;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    vertical-align: middle;
+}
+
+main {
+    padding-top: 24px;
+}
+
+section > img {
+    height: 46px;
+    width: 304px;
+}
+
+article {
+    margin: 32px 0;
+}
+
+article > p {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: normal;
+}
+
+.btn {
+    background: linear-gradient(92.29deg, #6C34E0 0%, #FF6ABF 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 36px;
+
+    font-family: 'Ubuntu Medium', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    position: relative;
+    z-index: 3;
+}
+
+.btn:hover {
+    background: linear-gradient(92.29deg, #FF6ABF 0%, #6C34E0 100%);
+    color: #000;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    transform: translate(10px, 8px, 10px, 8px);
+    z-index: -1;
+    background: linear-gradient(92.29deg, #6C34E0 0%, #FF6ABF 100%);
+    filter: blur(51px);
+}
+
+.btn::before:hover {
+    background: linear-gradient(92.29deg, #FF6ABF 0%, #6C34E0 100%);
+}
+
+.container-girl {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    margin: 64px 0 90px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.container-girl::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    border-radius: 20px;
+    transform: translate(10px, 8px, 10px, 8px);
+    z-index: -1;
+    background: linear-gradient(92.29deg, #6C34E0 0%, #FF6ABF 100%);
+    filter: blur(11px);
+}
+
+.container-girl > img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+footer {
+    height: 272px;
+    padding: 48px 0 64px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    align-items: center;
+}
+
+.contacts > p {
+    line-height: 24px;
+    width: 167px;
+    margin-right: 37px;
+    font-size: 16px;
+    height: 37px;
+}
+
+.contacts > p > a {
+    background: linear-gradient(90deg, #6C34E0 0%, #FF6ABF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 685px) {
+    .contacts > p {
+        margin: 0;
+        font-size: 12px;
+        width: 75%;
+    }
+
+    .icon-container > img {
+        width: 38px;
+        height: 38px;
+    }
+
+    article > p {
+        font-size: 12px;
+    }
+
+    .text_under {
+        font-size: 10px;
+    }
+
+    .container-girl {
+        margin: 64px 0 60px;
+    }
+
+    #mask_01 {
+        width: 50%;
+    }
+
+    #mask_02 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 0 15px;
+    }
+}
+
+.media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.text_under {
+    font-family: Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.decorate_text_under {
+    color: rgba(112, 112, 112, 1);  
+}
